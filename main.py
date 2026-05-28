@@ -5,7 +5,8 @@ import helpers
 class TestUrbanRoutes:
     @classmethod
     def setup_class(cls):
-        if helpers.is_url_reachable(data.URBAN_ROUTES_URL):
+        URL = data.URBAN_ROUTES_URL
+        if helpers.is_url_reachable(URL):
             print('Connected to the Urban Routes server')
         else:
             print('Cannot connect to Urban Routes. Check the server is on and still running')
